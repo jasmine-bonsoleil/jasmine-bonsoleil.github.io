@@ -140,6 +140,20 @@ nav {
   letter-spacing: 0.1em;
 }
 
+/* Avatar */
+.hero-avatar {
+  flex-shrink: 0;
+}
+
+.hero-avatar img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--amber-dim);
+  box-shadow: 0 0 40px rgba(212, 168, 67, 0.2);
+}
+
 /* Data cards */
 .data-grid {
   display: flex;
