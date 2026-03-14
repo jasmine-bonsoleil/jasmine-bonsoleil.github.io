@@ -63,7 +63,29 @@ nav {
 }
 
 .nav-logo {
-  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.nav-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--amber-dim);
+}
+
+.nav-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: #e8f0ff;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.nav-title-sub {
+  color: var(--amber);
 }
 
 .nav-links {
