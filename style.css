@@ -428,6 +428,69 @@ blockquote p {
   color: var(--text);
 }
 
+/* ─── Journal ─────────────────────── */
+#journal {
+  background: var(--bg2);
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.journal-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.journal-card:hover {
+  border-color: var(--amber-dim);
+  transform: translateY(-2px);
+}
+
+.journal-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.journal-card-body {
+  padding: 1.2rem 1.5rem;
+}
+
+.journal-card-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--amber-dim);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.journal-card-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: #e8f0ff;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.journal-card-excerpt {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ─── Footer ──────────────────────── */
 footer {
   position: relative;

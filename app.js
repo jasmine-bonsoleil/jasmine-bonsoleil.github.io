@@ -79,6 +79,29 @@ function loop() {
 }
 loop();
 
+// ─── Journal ────────────────────────
+fetch('journal.json')
+  .then(r => r.json())
+  .then(articles => {
+    const grid = document.getElementById('journal-grid');
+    articles.forEach(a => {
+      const card = document.createElement('a');
+      card.className = 'journal-card';
+      card.href = a.url;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.innerHTML = `
+        <img class="journal-card-img" src="${a.eyecatch}" alt="${a.title}">
+        <div class="journal-card-body">
+          <div class="journal-card-date">${a.date}</div>
+          <div class="journal-card-title">${a.title}</div>
+          <p class="journal-card-excerpt">${a.excerpt}</p>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  });
+
 // ─── Number counter animation ───────
 function animateCounter(el, target, duration = 1800) {
   const start = performance.now();
