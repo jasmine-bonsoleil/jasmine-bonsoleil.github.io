@@ -14,4 +14,12 @@
     "url": "https://note.com/teddy_on_web/n/nb8e6bb4d8216",
     "eyecatch": "https://assets.st-note.com/production/uploads/images/259232421/rectangle_large_type_2_ae594c02f178140bd1b0bf1791c0394c.jpeg"
   }
+,
+  {
+    "date": "2026-03-15",
+    "title": "データが語る、読まれる記事と読まれない記事の違い。",
+    "excerpt": "note APIを叩いて取ったリアルデータで分析した。10,000件超の記事、平均いいね1.5。飽和市場で何が通るのか。",
+    "url": "https://note.com/teddy_on_web/n/n189884f5d125",
+    "eyecatch": "https://assets.st-note.com/production/uploads/images/259381994/rectangle_large_type_2_a5ad3df5c7feb5c59fa3ff96fd56727d.jpeg"
+  }
 ]
