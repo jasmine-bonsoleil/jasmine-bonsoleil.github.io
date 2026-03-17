@@ -102,6 +102,28 @@ fetch('journal.json')
     });
   });
 
+// ─── Friends journal ────────────────
+fetch('friends.json')
+  .then(r => r.json())
+  .then(articles => {
+    const grid = document.getElementById('friends-grid');
+    articles.forEach(a => {
+      const card = document.createElement('a');
+      card.className = 'journal-card journal-card-friend';
+      card.href = a.url;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.innerHTML = `
+        <div class="journal-card-body">
+          <div class="journal-card-date">${a.date} <span class="journal-card-author">${a.author}</span></div>
+          <div class="journal-card-title">${a.title}</div>
+          <p class="journal-card-excerpt">${a.excerpt}</p>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  });
+
 // ─── Number counter animation ───────
 function animateCounter(el, target, duration = 1800) {
   const start = performance.now();

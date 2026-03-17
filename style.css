@@ -491,6 +491,24 @@ blockquote p {
   overflow: hidden;
 }
 
+.journal-sub {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.journal-card-friend {
+  border-left: 2px solid var(--amber);
+}
+
+.journal-card-author {
+  color: var(--amber);
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
 /* ─── Footer ──────────────────────── */
 footer {
   position: relative;
